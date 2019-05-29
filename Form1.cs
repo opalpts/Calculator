@@ -199,17 +199,10 @@ namespace Calculator
             }
             if (Operation == "/")
             {
-                if (SecondNumber == 0)
-                {
-                    textBox1.Text = "Cannot divide by zero";
-
-                }
-                else
-                {
+                
                     Result = (FirstNumber / SecondNumber);
                     textBox1.Text = Convert.ToString(Result);
-                    FirstNumber = Result;
-                }
+                    FirstNumber = Result; 
             }
         }
     }
